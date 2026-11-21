@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Personal portfolio — Still Becoming.">
+  <title>SENA — Still Becoming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo" id="navLogo">S.</a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Works</a>
+      <a href="#thoughts">Thoughts</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="edit-trigger" id="editButton">
+      <span>✳</span> Customize
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-meta">
+        <span id="heroLocation">BASED IN INDONESIA</span>
+        <span>PORTFOLIO / <span id="heroYear"></span></span>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow" id="heroEyebrow">AN ONGOING EXPERIMENT</p>
+
+        <h1 id="heroTitle">
+          Still<br>
+          <em>Becoming.</em>
+        </h1>
+
+        <p class="hero-description" id="heroDescription">
+          An unfinished perspective in an endlessly interesting world.
+        </p>
+
+        <a href="#about" class="explore-link">
+          EXPLORE MY WORLD <span>↘</span>
+        </a>
+      </div>
+
+      <div class="hero-side-note" id="heroSideNote">
+        ALWAYS QUESTIONING.<br>
+        NEVER FINISHED.
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 — INTRODUCTION</span>
+        <span>SCROLL TO DISCOVER ↓</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section-label">
+        <span>01 / ABOUT ME</span>
+        <span>THE PERSON BEHIND THE PERSPECTIVE</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img id="profileImage" src="assets/profile.jpg"
+               alt="Profile portrait"
+               onerror="this.style.display='none'">
+          <div class="image-placeholder" id="imagePlaceholder">
+            YOUR<br>PORTRAIT
+          </div>
+          <span class="image-caption" id="imageCaption">A WORK IN PROGRESS.</span>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2 id="aboutTitle">
+            A mind that<br>
+            refuses to <em>settle.</em>
+          </h2>
+
+          <p id="aboutDescription">
+            I am someone who finds meaning in questions,
+            explores different perspectives, and believes
+            that understanding oneself is a lifelong process.
+          </p>
+
+          <div class="about-details" id="aboutDetails">
+            <div><span>NAME</span><strong id="personName">Sena</strong></div>
+            <div><span>LOCATION</span><strong id="personLocation">Indonesia</strong></div>
+            <div><span>CURRENT STATE</span><strong id="personState">Still becoming</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section interests" id="interests">
+      <div class="section-label">
+        <span>02 / INTERESTS</span>
+        <span>THINGS THAT KEEP ME CURIOUS</span>
+      </div>
+
+      <h2 class="section-heading">
+        Things I find<br><em>interesting.</em>
+      </h2>
+
+      <div class="interest-list" id="interestList"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="section-label">
+        <span>03 / SELECTED WORKS</span>
+        <span>A COLLECTION OF EXPERIMENTS</span>
+      </div>
+
+      <div class="projects-heading">
+        <h2 class="section-heading">Selected <em>works.</em></h2>
+        <span class="project-count" id="projectCount">03 PROJECTS</span>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <!-- THOUGHTS -->
+    <section class="section thoughts" id="thoughts">
+      <div class="section-label">
+        <span>04 / THOUGHTS</span>
+        <span>FRAGMENTS OF MY MIND</span>
+      </div>
+
+      <div class="thought-content">
+        <span class="quote-mark">“</span>
+        <h2 id="thoughtQuote">
+          Perhaps the most interesting thing about life
+          is that we never truly finish understanding it.
+        </h2>
+        <p id="thoughtAuthor">— A PERSONAL REFLECTION</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="section-label">
+        <span>05 / GET IN TOUCH</span>
+        <span>THE CONVERSATION CAN START HERE</span>
+      </div>
+
+      <div class="contact-content">
+        <p class="eyebrow">HAVE SOMETHING INTERESTING IN MIND?</p>
+        <h2>Let's start a<br><em>conversation.</em></h2>
+        <a href="mailto:hello@example.com" class="contact-link" id="contactEmail">
+          GET IN TOUCH ↗
+        </a>
+      </div>
+
+      <div class="social-links" id="socialLinks"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="footerName">SENA — STILL BECOMING</span>
+    <span>© <span id="footerYear"></span> / ALL RIGHTS RESERVED</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <!-- CUSTOMIZATION PANEL -->
+  <div class="editor-overlay" id="editorOverlay">
+    <aside class="editor-panel">
+      <div class="editor-header">
+        <div>
+          <p class="eyebrow">PORTFOLIO SETTINGS</p>
+          <h2>Customize.</h2>
+        </div>
+        <button id="closeEditor" class="close-btn">×</button>
+      </div>
+
+      <div class="editor-actions">
+        <button id="saveButton" class="primary-button">SAVE CHANGES</button>
+        <button id="exportButton" class="secondary-button">EXPORT JSON</button>
+      </div>
+
+      <div class="editor-body">
+
+        <details open>
+          <summary>01 — Personal Identity</summary>
+          <label>Display name<input id="editName"></label>
+          <label>Logo<input id="editLogo"></label>
+          <label>Location<input id="editLocation"></label>
+          <label>Current state<input id="editState"></label>
+          <label>Hero eyebrow<input id="editEyebrow"></label>
+          <label>Hero title (gunakan | untuk baris baru)<input id="editTitle"></label>
+          <label>Hero description<textarea id="editDescription"></textarea></label>
+          <label>Hero side note<textarea id="editSideNote"></textarea></label>
+        </details>
+
+        <details>
+          <summary>02 — About Me</summary>
+          <label>About heading<input id="editAboutTitle"></label>
+          <label>About description<textarea id="editAbout"></textarea></label>
+          <label>Profile image
+            <input type="file" id="imageUpload" accept="image/*">
+          </label>
+          <label>Image caption<input id="editImageCaption"></label>
+        </details>
+
+        <details>
+          <summary>03 — Interests</summary>
+          <p class="editor-hint">Pisahkan setiap interest dengan baris baru.</p>
+          <textarea id="editInterests" rows="7"></textarea>
+        </details>
+
+        <details>
+          <summary>04 — Projects</summary>
+          <div id="projectEditor"></div>
+          <button id="addProject" class="secondary-button full-button">+ ADD PROJECT</button>
+        </details>
+
+        <details>
+          <summary>05 — Personal Thoughts</summary>
+          <label>Quote<textarea id="editQuote"></textarea></label>
+          <label>Attribution<input id="editAuthor"></label>
+        </details>
+
+        <details>
+          <summary>06 — Contact & Social</summary>
+          <label>Email<input id="editEmail" type="email"></label>
+          <p class="editor-hint">Format: nama|URL. Satu social media per baris.</p>
+          <textarea id="editSocial" rows="5"></textarea>
+        </details>
+
+        <details>
+          <summary>07 — Appearance</summary>
+          <label>Background<input id="editBackground" type="color"></label>
+          <label>Accent color<input id="editAccent" type="color"></label>
+          <label>Text color<input id="editText" type="color"></label>
+          <label>Font
+            <select id="editFont">
+              <option value="DM Sans">DM Sans</option>
+              <option value="Arial">Arial</option>
+              <option value="Georgia">Georgia</option>
+            </select>
+          </label>
+        </details>
+
+        <details>
+          <summary>08 — Data Management</summary>
+          <button id="importButton" class="secondary-button full-button">IMPORT JSON</button>
+          <input type="file" id="importFile" accept=".json" hidden>
+          <button id="resetButton" class="danger-button full-button">RESET TO DEFAULT</button>
+        </details>
+
+      </div>
+
+      <div class="editor-footer">
+        Changes are saved in this browser.
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
